@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1" />
+    <title>iOS Modular Export Demo</title>
+
+    <style>
+        model-viewer {
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<model-viewer class=""
+              id="mv"
+              src=""
+              ar
+              ar-modes="webxr scene-viewer quick-look"
+              environment-image="neutral"
+              auto-rotate
+              ar-scale="fixed"
+              camera-controls>
+    <button slot="ar-button"
+            id="ar-button" />
+</model-viewer>
+
+</body>
+
+</html>
