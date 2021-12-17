@@ -56,7 +56,7 @@ const setupGeometryUi = ( ) => {
     gui.add( data, 'height', 1, 30 ).onChange( generateGeometry );
     gui.add( data, 'depth', 1, 30 ).onChange( generateGeometry );
     let obj = {add:function(){startAr()}};
-    gui.add(obj,'Start AR');
+    gui.add(obj,'add').name('Start AR');
 
     generateGeometry();
 
